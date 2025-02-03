@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Multi-Page Crypto Investment Dashboard</title>
+    
+    <!-- ICONSCOUT CDN -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="./transaction.css">
+</head>
+<body>
+    <nav>
+        <div class="container nav_container">
+            <a href="../index.html" class="nav_logo">
+                <img src="../assets/logo 2.png" alt="logo">
+            </a>
+            <div class="nav_search">
+                <i class="uil uil-search"></i>
+                <input type="search" placeholder="Search">
+            </div>
+            <div class="nav_profile-wrapper">
+                <button class="nav-theme-btn">
+                    <i class="uil uil-moon"></i> 
+                </button>
+                <div class="nav_profile">
+                    <div class="nav_profile-photo">
+                        <img src="../assets/project 2.png" alt="Profile Picture">
+                    </div>
+                    <h5>Vic Rice</h5>
+                    <i class="uil uil-angle-down"></i>
+                </div>
+                <button class="nav_menu-btn">
+                    <i class="uil uil-bars"></i> 
+                </button>
+            </div>
+        </div>
+    </nav>
+
+
+    <menu class="sidebar">
+        <div class="sidebar-header">
+            <a href="../index.html">
+                <i class="uil uil-create-dashboard"></i>
+                <h5>Dashboard</h5>
+            </a>
+        </div>
+
+        <a href="">
+            <i class="uil uil-exchange"></i>
+            <h5>Exchange</h5>
+        </a>
+        <a href="../wallet/wallet.html">
+            <i class="uil uil-wallet"></i>
+            <h5>Wallet</h5>
+        </a>
+        <a href="transaction/transaction.html"  class="active">
+            <i class="uil uil-transaction"></i>
+            <h5>Transactions</h5>
+        </a>
+        <a href="">
+            <i class="uil uil-analytics"></i>
+            <h5>Analytics</h5>
+        </a>
+        <a href="">
+            <i class="uil uil-message"></i> 
+            <h5>Messages</h5>
+        </a>
+        <a href="">
+            <i class="uil uil-comment-question"></i>
+            <h5>Help</h5>
+        </a>
+        <a href="">
+            <i class="uil uil-setting"></i>
+            <h5>Settings</h5>
+        </a>
+        <button class="sidebar_close-btn">
+            <i class="uil uil-multiply"></i>
+        </button>
+    </menu>
+
+
+    <table class="transactionsTable"> 
+        <thead>
+            <tr>
+                <th>Transaction ID</th>
+                <th>Date</th>
+                <th>From</th>
+                <th>To</th>
+                <th>Coin</th>
+                <th>Amount</th>
+                <th>Note</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>#898560403300</td>
+                <td>03/02, 2025</td>
+                <td>John</td>
+                <td>Bin</td>
+                <td>Bitcoin</td>
+                <td>0.02345</td>
+                <td>p2p payment</td>
+                <td class="success">Completed</td>
+            </tr>
+            <tr>
+                <td>#898560403301</td>
+                <td>03/02, 2025</td>
+                <td>Mary</td>
+                <td>Sam</td>
+                <td>Ethereum</td>
+                <td>1.13456</td>
+                <td>investment</td>
+                <td class="pending">Pending</td>
+            </tr>
+            <tr>
+                <td>#898560403302</td>
+                <td>03/03, 2025</td>
+                <td>Jane</td>
+                <td>Mike</td>
+                <td>Litecoin</td>
+                <td>0.3421</td>
+                <td>gift</td>
+                <td class="failed">Failed</td>
+            </tr>
+            <tr>
+                <td>#898560403303</td>
+                <td>03/04, 2025</td>
+                <td>Alice</td>
+                <td>John</td>
+                <td>Bitcoin</td>
+                <td>0.98765</td>
+                <td>payment for services</td>
+                <td class="success">Completed</td>
+            </tr>
+            <tr>
+                <td>#898560403304</td>
+                <td>03/05, 2025</td>
+                <td>Sam</td>
+                <td>Rachel</td>
+                <td>Ethereum</td>
+                <td>3.56789</td>
+                <td>refund</td>
+                <td class="pending">Pending</td>
+            </tr>
+            <tr>
+                <td>#898560403305</td>
+                <td>03/06, 2025</td>
+                <td>Mike</td>
+                <td>John</td>
+                <td>Ripple</td>
+                <td>50.23</td>
+                <td>stock payment</td>
+                <td class="success">Completed</td>
+            </tr>
+            <tr>
+                <td>#898560403306</td>
+                <td>03/07, 2025</td>
+                <td>Rachel</td>
+                <td>Jane</td>
+                <td>Bitcoin</td>
+                <td>0.04567</td>
+                <td>p2p payment</td>
+                <td class="failed">Failed</td>
+            </tr>
+            <tr>
+                <td>#898560403307</td>
+                <td>03/08, 2025</td>
+                <td>Alice</td>
+                <td>Sam</td>
+                <td>Litecoin</td>
+                <td>0.76543</td>
+                <td>gift</td>
+                <td class="pending">Pending</td>
+            </tr>
+            <tr>
+                <td>#898560403308</td>
+                <td>03/09, 2025</td>
+                <td>John</td>
+                <td>Rachel</td>
+                <td>Ethereum</td>
+                <td>10.23456</td>
+                <td>investment</td>
+                <td class="success">Completed</td>
+            </tr>
+            <tr>
+                <td>#898560403309</td>
+                <td>03/10, 2025</td>
+                <td>Mike</td>
+                <td>Jane</td>
+                <td>Ripple</td>
+                <td>2.98765</td>
+                <td>p2p payment</td>
+                <td class="success">Completed</td>
+            </tr>
+            <tr>
+                <td>#898560403310</td>
+                <td>03/11, 2025</td>
+                <td>John</td>
+                <td>Mary</td>
+                <td>Bitcoin</td>
+                <td>5.01234</td>
+                <td>loan repayment</td>
+                <td class="pending">Pending</td>
+            </tr>
+            <tr>
+                <td>#898560403311</td>
+                <td>03/12, 2025</td>
+                <td>Rachel</td>
+                <td>John</td>
+                <td>Ethereum</td>
+                <td>0.12345</td>
+                <td>gift</td>
+                <td class="failed">Failed</td>
+            </tr>
+            <tr>
+                <td>#898560403312</td>
+                <td>03/13, 2025</td>
+                <td>Alice</td>
+                <td>Mike</td>
+                <td>Bitcoin</td>
+                <td>0.87654</td>
+                <td>p2p payment</td>
+                <td class="success">Completed</td>
+            </tr>
+            <tr>
+                <td>#898560403313</td>
+                <td>03/14, 2025</td>
+                <td>Mary</td>
+                <td>Sam</td>
+                <td>Litecoin</td>
+                <td>3.45678</td>
+                <td>investment</td>
+                <td class="pending">Pending</td>
+            </tr>
+            <tr>
+                <td>#898560403314</td>
+                <td>03/15, 2025</td>
+                <td>Mike</td>
+                <td>Rachel</td>
+                <td>Ripple</td>
+                <td>0.76543</td>
+                <td>refund</td>
+                <td class="failed">Failed</td>
+            </tr>
+            <tr>
+                <td>#898560403315</td>
+                <td>03/16, 2025</td>
+                <td>Jane</td>
+                <td>Alice</td>
+                <td>Ethereum</td>
+                <td>4.56789</td>
+                <td>loan repayment</td>
+                <td class="success">Completed</td>
+            </tr>
+            <tr>
+                <td>#898560403316</td>
+                <td>03/17, 2025</td>
+                <td>John</td>
+                <td>Sam</td>
+                <td>Bitcoin</td>
+                <td>2.34567</td>
+                <td>gift</td>
+                <td class="pending">Pending</td>
+            </tr>
+            <tr>
+                <td>#898560403317</td>
+                <td>03/18, 2025</td>
+                <td>Rachel</td>
+                <td>John</td>
+                <td>Litecoin</td>
+                <td>0.98765</td>
+                <td>stock payment</td>
+                <td class="failed">Failed</td>
+            </tr>
+            <tr>
+                <td>#898560403318</td>
+                <td>03/19, 2025</td>
+                <td>Alice</td>
+                <td>Mike</td>
+                <td>Ripple</td>
+                <td>12.23456</td>
+                <td>investment</td>
+                <td class="success">Completed</td>
+            </tr>
+            <tr>
+                <td>#898560403319</td>
+                <td>03/20, 2025</td>
+                <td>Mary</td>
+                <td>Sam</td>
+                <td>Bitcoin</td>
+                <td>0.54321</td>
+                <td>gift</td>
+                <td class="pending">Pending</td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="../main.js"></script>    
+</body>
+</html>

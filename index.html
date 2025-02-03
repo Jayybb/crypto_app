@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Multi-Page Crypto Investment Dashboard</title>
+    
+    <!-- ICONSCOUT CDN -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="container nav_container">
+            <a href="./index.html" class="nav_logo">
+                <img src="../assets/logo 2.png" alt="logo">
+            </a>
+            <div class="nav_search">
+                <i class="uil uil-search"></i>
+                <input type="search" placeholder="Search">
+            </div>
+            <div class="nav_profile-wrapper">
+                <button class="nav-theme-btn">
+                    <i class="uil uil-moon"></i> 
+                </button>
+                <div class="nav_profile">
+                    <div class="nav_profile-photo">
+                        <img src="./assets/project 2.png" alt="Profile Picture">
+                    </div>
+                    <h5>Vic Rice</h5>
+                    <i class="uil uil-angle-down"></i>
+                </div>
+                <button class="nav_menu-btn">
+                    <i class="uil uil-bars"></i> 
+                </button>
+            </div>
+        </div>
+    </nav>
+
+
+    <menu class="sidebar">
+        <div class="sidebar-header">
+            <a href="index.html" class="active">
+                <i class="uil uil-create-dashboard"></i>
+                <h5>Dashboard</h5>
+            </a>
+        </div>
+
+        <a href="">
+            <i class="uil uil-exchange"></i>
+            <h5>Exchange</h5>
+        </a>
+        <a href="wallet/wallet.html">
+            <i class="uil uil-wallet"></i>
+            <h5>Wallet</h5>
+        </a>
+        <a href="transaction/transaction.html">
+            <i class="uil uil-transaction"></i>
+            <h5>Transactions</h5>
+        </a>
+        <a href="">
+            <i class="uil uil-analytics"></i>
+            <h5>Analytics</h5>
+        </a>
+        <a href="">
+            <i class="uil uil-message"></i> 
+            <h5>Messages</h5>
+        </a>
+        <a href="">
+            <i class="uil uil-comment-question"></i>
+            <h5>Help</h5>
+        </a>
+        <a href="">
+            <i class="uil uil-setting"></i>
+            <h5>Settings</h5>
+        </a>
+        <button class="sidebar_close-btn">
+            <i class="uil uil-multiply"></i>
+        </button>
+    </menu>
+
+
+    <main class="main">
+        <header class="main_header">
+            <h1>Overview</h1>
+            <label for="date-picker">Select Date:</label>
+            <input type="date" id="date-picker">
+        </header>
+        <section class="main_cards">
+            <article class="card">
+                <div class="card_header"> <!-- Fixed class name -->
+                    <div class="card_header-left">
+                        <img src="./assets/BTC.png" alt="Bitcoin Logo">
+                        <h3>BTC</h3>
+                    </div>
+                    <div class="card_header-right">
+                        <img src="./assets/visa.png" alt="Visa Logo">
+                    </div>
+                </div>
+                <div class="card_body">
+                    <h1>$423,790</h1>
+                    <div class="card_body-chip">
+                        <img src="./assets/card chip.png" alt="Card Chip"> <!-- Fixed filename -->
+                    </div>
+                </div>
+                <div class="card_footer">
+                    <div class="card_footer-left">
+                        <small>Card Holder</small>
+                        <h5>Victor Rice</h5>
+                    </div>
+                    <div class="card_footer-right">
+                        <div class="expiry">
+                            <small>Expiry</small>
+                            <h5>06/26</h5>
+                        </div>
+                        <div class="CVV">
+                            <small>CVV</small> <!-- Capitalized 'CVV' for consistency -->
+                            <h5>677</h5>
+                        </div>
+                    </div> 
+                </div>
+            </article>
+    
+            <article class="card">
+                <div class="card_header"> <!-- Fixed class name -->
+                    <div class="card_header-left">
+                        <img src="./assets/BTC.png" alt="Bitcoin Logo">
+                        <h3>BTC</h3>
+                    </div>
+                    <div class="card_header-right">
+                        <img src="./assets/visa.png" alt="Visa Logo">
+                    </div>
+                </div>
+                <div class="card_body">
+                    <h1>$749,000</h1>
+                    <div class="card_body-chip">
+                        <img src="./assets/card chip.png" alt="Card Chip">
+                    </div>
+                </div>
+                <div class="card_footer">
+                    <div class="card_footer-left">
+                        <small>Card Holder</small>
+                        <h5>Vin Diesel</h5>
+                    </div>
+                    <div class="card_footer-right">
+                        <div class="expiry">
+                            <small>Expiry</small>
+                            <h5>06/25</h5>
+                        </div>
+                        <div class="CVV">
+                            <small>CVV</small> <!-- Capitalized 'CVV' for consistency -->
+                            <h5>442</h5>
+                        </div>
+                    </div> 
+                </div>
+            </article>
+            <article class="card">
+                <div class="card_header"> <!-- Fixed class name -->
+                    <div class="card_header-left">
+                        <img src="./assets/ETH.png" alt="Ethereum Logo">
+                        <h3>ETH</h3>
+                    </div>
+                    <div class="card_header-right">
+                        <img src="./assets/visa.png" alt="Visa Logo">
+                    </div>
+                </div>
+                <div class="card_body">
+                    <h1>$280,665</h1>
+                    <div class="card_body-chip">
+                        <img src="./assets/card chip.png" alt="Card Chip">
+                    </div>
+                </div>
+                <div class="card_footer">
+                    <div class="card_footer-left">
+                        <small>Card Holder</small>
+                        <h5>Chris Pratt</h5>
+                    </div>
+                    <div class="card_footer-right">
+                        <div class="expiry">
+                            <small>Expiry</small>
+                            <h5>04/26</h5>
+                        </div>
+                        <div class="CVV">
+                            <small>CVV</small> <!-- Capitalized 'CVV' for consistency -->
+                            <h5>778</h5>
+                        </div>
+                    </div> 
+                </div>
+            </article>
+        </section>
+
+<section class="fastpayment">
+    <h2>Fast Payment</h2>
+    <ul class="fastpayment_badges">
+        <li class="fastpayment_badge">
+            <h4>+</h4>
+        </li>
+        <li class="fastpayment_badge">
+            <span class="bg-primary"></span>
+            <div>
+            <h5>Training</h5>
+            <h4>$70</h4>
+        </div>
+        </li> 
+        <li class="fastpayment_badge">
+            <span class="bg-success"></span>
+            <div>
+            <h5>Internet</h5>
+            <h4>$60</h4>
+        </div>
+        </li>
+        <li class="fastpayment_badge">
+            <span class="bg-primary"></span>
+            <div>
+            <h5>Gas</h5>
+            <h4>$120</h4>
+        </div>
+        </li>
+        <li class="fastpayment_badge">
+            <span class="bg-danger"></span>
+            <div>
+            <h5>Cinema</h5>
+            <h4>$50</h4>
+        </div>
+        </li>
+        <li class="fastpayment_badge">
+            <span class="bg-primary"></span>
+            <div>
+            <h5>Education</h5>
+            <h4>$2000</h4>
+        </div>
+        </li>
+        <li class="fastpayment_badge">
+            <span class="bg-danger"></span>
+            <div>
+            <h5>Electricity</h5>
+            <h4>$200</h4>
+        </div>
+        </li>
+        <li class="fastpayment_badge">
+            <span class="bg-primary"></span>
+            <div>
+            <h5>Gaming</h5>
+            <h4>$100</h4>
+        </div>
+        </li>
+        <li class="fastpayment_badge">
+            <span class="bg-success"></span>
+            <div>
+            <h5>Travels</h5>
+            <h4>$500</h4>
+        </div>
+        </li>
+        <li class="fastpayment_badge">
+            <span class="bg-success"></span>
+            <div>
+            <h5>Food</h5>
+            <h4>$260</h4>
+        </div>
+        </li>
+    </ul>
+</section>
+
+<canvas id="chart"></canvas>
+ </main>
+
+ <section class="right">
+    <!-- Investments should be on top -->
+    <section class="investments">
+        <header class="investments_header">
+            <h2>Investments</h2>
+            <a href="#">
+                More <i class="uil uil-angle-right-b"></i>
+            </a> 
+        </header>
+        <article class="investments_item">
+            <img src="./assets/unilever.png" alt="Unilever">
+            <h4>Unilever</h4>
+            <div class="date-time">
+                <p>3 February 2025</p>
+                <small class="text-muted">0:00am</small>
+            </div>
+            <div class="bond">
+                <p>2,500</p>
+                <small class="text-muted">Bonds</small>
+            </div>
+            <div class="amount">
+                <h5>$50,300</h5>
+                <small class="danger">-3.00%</small>
+            </div>
+        </article>
+        <article class="investments_item">
+            <img src="./assets/mcdonalds.png" alt="McDonald's">
+            <h4>McDonald's</h4>
+            <div class="date-time">
+                <p>3 February 2025</p>
+                <small class="text-muted">12:49 AM</small>
+            </div>
+            <div class="bond">
+                <p>3,200</p>
+                <small class="text-muted">Bonds</small>
+            </div>
+            <div class="amount">
+                <h5>$40,500</h5>
+                <small class="success">+2.00%</small>
+            </div>
+        </article>
+        <article class="investments_item">
+            <img src="./assets/monster.png" alt="Monster">
+            <h4>Monster</h4>
+            <div class="date-time">
+                <p>3 February 2025</p>
+                <small class="text-muted">12:51 AM</small>
+            </div>
+            <div class="bond">
+                <p>4,000</p>
+                <small class="text-muted">Bonds</small>
+            </div>
+            <div class="amount">
+                <h5>$76,500</h5>
+                <small class="success">+5.00%</small>
+            </div>
+        </article>
+        <article class="investments_item">
+            <img src="./assets/tesla.png" alt="Tesla">
+            <h4>Tesla</h4>
+            <div class="date-time">
+                <p>3 February 2025</p>
+                <small class="text-muted">12:55 AM</small>
+            </div>
+            <div class="bond">
+                <p>5,000</p>
+                <small class="text-muted">Bonds</small>
+            </div>
+            <div class="amount">
+                <h5>$35,200</h5>
+                <small class="danger">-6.00%</small>
+            </div>
+        </article>
+    </section>
+
+    <!-- Recent Transactions should be below Investments -->
+    <section class="recent_transactions">
+        <header class="recent_transactions_header">
+            <h2>Recent Transactions</h2>
+            <a href="#">
+                More <i class="uil uil-angle-right-b"></i>
+            </a>
+        </header>
+        <article class="transaction">
+            <div class="transaction_service">
+                <div class="icon bg-purple-light">
+                    <i class="uil uil-headphones"></i>
+                </div>
+                <div class="transaction_details">
+                    <h4>Music</h4>
+                    <p>3 February 2025</p>
+                </div>
+                <div class="transaction_card-details">
+                    <div class="transaction_card-image bg-danger">
+                        <img src="./assets/visa.png" alt="">
+                    </div>
+                    <div class="transaction_details">
+                        <p>*6745</p>
+                        <small class="text-muted">Credit Card</small>
+                    </div>
+                </div>
+                <h4>-$30</h4>
+            </div>
+        </article>
+        <article class="transaction">
+            <div class="transaction_service">
+                <div class="icon bg-purple-light">
+                    <i class="uil uil-shopping-cart-alt"></i>
+                </div>
+                <div class="transaction_details">
+                    <h4>Shopping</h4>
+                    <p>3 February 2025</p>
+                </div>
+                <div class="transaction_card-details">
+                    <div class="transaction_card-image bg-danger">
+                        <img src="./assets/visa.png" alt="">
+                    </div>
+                    <div class="transaction_details">
+                        <p>*6543</p>
+                        <small class="text-muted">Credit Card</small>
+                    </div>
+                </div>
+                <h4>-$200</h4>
+            </div>
+        </article>
+        <article class="transaction">
+            <div class="transaction_service">
+                <div class="icon bg-success-light">
+                    <i class="uil uil-kayak"></i>
+                </div>
+                <div class="transaction_details">
+                    <h4>Kayak</h4>
+                    <p>3 February 2025</p>
+                </div>
+                <div class="transaction_card-details">
+                    <div class="transaction_card-image bg-dark">
+                        <img src="./assets/master card.png" alt="">
+                    </div>
+                    <div class="transaction_details">
+                        <p>*9876</p>
+                        <small class="text-muted">Credit Card</small>
+                    </div>
+                </div>
+                <h4>-$70</h4>
+            </div>
+        </article>
+    </section>
+</section>
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.1/chart.min.js" integrity="sha512-O2fWHvFel3xjQSi9FyzKXWLTvnom+lOYR/AUEThL/fbP4hv1Lo5LCFCGuTXBRyKC4K4DJldg5kxptkgXAzUpvA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./main.js"></script>    
+</body>
+</html>

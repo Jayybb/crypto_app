@@ -1,0 +1,55 @@
+body {
+    display: grid;
+    grid-template-columns: 17rem auto;
+    gap: 1rem;
+}
+
+/* Styling for the table */
+.transactionsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 6rem;
+    height: fit-content;
+}
+
+/* Table Header styling */
+.transactionsTable th {
+    text-align: left;
+    padding: 0.8rem;
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+/* Table Data styling */
+.transactionsTable td {
+    padding: 1rem;
+    border: 1px solid #dddddd98;
+}
+
+/* Zebra striping for odd rows */
+.transactionsTable tbody tr:nth-child(odd) td {
+    background-color: var(--color-white, #f9f9f9); /* Use fallback color */
+}
+
+/* Hover effect for rows */
+.transactionsTable tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Success status (Completed) styling */
+.transactionsTable td.success {
+    color: green;
+    font-weight: bold;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .transactionsTable {
+        font-size: 14px;
+    }
+
+    .transactionsTable th,
+    .transactionsTable td {
+        padding: 0.5rem;
+    }
+}
