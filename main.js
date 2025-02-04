@@ -31,24 +31,6 @@ closeSidebarBtn.addEventListener('click', () => {
 });
 
 
-// Get references to the eye icon and balance elements
-const eyeIcon = document.getElementById('eyeIcon');
-const balance = document.getElementById('balance');
-
-// Toggle visibility function
-eyeIcon.addEventListener('click', () => {
-    // Check the current state and toggle visibility
-    if (balance.style.display === 'none') {
-        balance.style.display = 'block';  // Show balance
-        eyeIcon.classList.remove('uil-eye-slash');  // Show eye icon
-        eyeIcon.classList.add('uil-eye');  // Change icon to 'eye'
-    } else {
-        balance.style.display = 'none';  // Hide balance
-        eyeIcon.classList.remove('uil-eye');  // Hide eye icon
-        eyeIcon.classList.add('uil-eye-slash');  // Change icon to 'eye-slash'
-    }
-});
-
 
 // Chart Setup
 const chart = document.querySelector("#chart").getContext("2d");
